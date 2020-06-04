@@ -1,1 +1,3 @@
-bedtools
+name: environment
+dependencies: 
+  - bedtools
