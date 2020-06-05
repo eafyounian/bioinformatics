@@ -4,7 +4,7 @@ This repository collects ways to teach bioinformatics (at least the part that in
 
 ---
 
-## Run JupyterLab via Binder
+## Run JupyterLab or Jupyter Notebook via Binder
 
 | JupyterLab<br/>(recommended) | Jupyter Notebook |
 |----------- |----------------- |
