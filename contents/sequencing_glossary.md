@@ -8,12 +8,15 @@ Here, you will find a list of commonly used concepts in sequencing, in the form 
 ---
 class: middle, center
 
-What are 3 methods for determining the DNA nucleotide order?
+Name 3 sequencing methods used for determining the DNA nucleotide order.
 
 --
-- sequencing by hybridization.
-- sequencing by synthesis. 
-- sequencing by ligation.
+sequencing by hybridization.
+
+--
+sequencing by synthesis.  
+
+--
+sequencing by ligation.  
 
 ---
-
