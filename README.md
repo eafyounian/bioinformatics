@@ -1,6 +1,6 @@
 # Bioinformatics
 
-This repository collects ways to teach bioinformatics (at least the part that involves the analysis of high-throughput sequencing data).  
+This repository collects contents as well as ways to teach bioinformatics (at least the part that involves the analysis of high-throughput sequencing data).  
 
 ---
 
