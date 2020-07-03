@@ -11,12 +11,15 @@ class: middle, center
 Name 3 sequencing methods used for determining the DNA nucleotide order.
 
 --
+
 sequencing by hybridization.
 
 --
+
 sequencing by synthesis.  
 
 --
+
 sequencing by ligation.  
 
 ---
