@@ -4,6 +4,10 @@ This repository collects contents as well as ways to teach bioinformatics (at le
 
 ---
 
+## Convert Phred score to probability
+
+[Phred score converter](pages/phred_converter.html)
+
 ## Run JupyterLab or Jupyter Notebook via Binder
 
 | JupyterLab<br/>(recommended) | Jupyter Notebook |

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Phred score converter</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js">
+    </script>
+
+    <style>
+        *{
+            font-family: sans-serif;
+            font-size: 1.2em;
+        }
+        td{
+            background-color: #ccc;
+            padding: 10px 30px 10px 30px;
+            border-radius: 0.2em;
+            text-align: center;
+            cursor: default;
+        }
+        #result{
+            border-color: #000;
+            border-width: 1px;
+            border-style: solid;
+            padding: 10px 30px 10px 30px;
+            text-align: right;
+        }
+        #probability{
+            color: crimson;
+            border-width: 0px;
+            text-align: right;
+        }
+        </style>
+
+
+</head>
+
+<body onload="brython()">
+
+
+<script type="text/python">
+from browser import document, html
+
+def calculate(event):
+    phred = document['phred'].value
+    try:
+        phred = int(phred)
+
+        if phred < 0:
+            document['probability'].textContent = "Phred score should be positive!"
+        else:
+            result = 10 ** ((-phred) / 10)
+            document['probability'].textContent = '%.9f' %result
+            # document['probability'].textContent = str(result)
+    except ValueError:
+        document['probability'].textContent = "Incorrect entry! Try again!"
+
+document['calculate_button'].bind("click", calculate)
+
+</script>
+
+<h1>Phred score to probability converter</h1>
+
+Calculate the probability of a call/mapping being incorrect from Phred score
+
+<br><br>
+<input id="phred" value="0">
+<button id="calculate_button">Calculate probability!</button>
+<br>
+<br>
+<label id="label1">Probability of call/mapping being incorrect:</label>
+<label id="probability"></label>
+
+</body>
+
+</html>
