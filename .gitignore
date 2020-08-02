@@ -1,5 +1,2 @@
 *.pdf
-
 .ipynb_checkpoints
-*.html
-*.css
